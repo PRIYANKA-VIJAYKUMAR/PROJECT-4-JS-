@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    perspective: 1000px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+}
+.box
+{
+    min-height: 70vh;
+    width:70% ;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    box-shadow:  5px 5px 6px rgba(0,0,0,.5),
+                 -5px -5px 6px rgba(0,0,0,.5);
+    transform-style: preserve-3d;             
+}
+h1{
+    font-size: 50px;
+    margin-left: 1rem;
+    color: #fc00fc;
+    position: relative;
+    display: flex;
+}
+.form{
+    min-height: 50vh;
+    min-width: 50%;
+    color: white;
+
+}
+label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 2;
+    padding-left: 20px;
+}
+input{
+    width: 12rem;
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+    border-bottom: 1px solid white;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+button{
+    outline: none;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    padding: 5px 80px;
+    border-radius: 30px; 
+    background-color: #cf00f0;
+    color: white;
+
+}
+#man{
+    width: 10rem;
+    height: 13rem;
+    bottom: -4rem;
+    position: relative;
+    right: 7rem;
+    z-index: 2;
+}
+#logo{
+    width: 6rem;
+    height: 3rem;
+    top: 3rem;
+    position: absolute;
+    right: 12rem;
+}
+h2{
+    color: white;
+    position: absolute;
+    right: 11rem;
+    top: 8rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: 25px;
+    z-index: 3;
+}
+.path{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,#0dbde0 0%,#fc00fc 100%);
+    clip-path: circle(350px at right 130px);
+    border-radius: 30px;
+    z-index: 1;
+}

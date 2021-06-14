@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG-IN FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="path"></div>
+            <div class="form" id="form">
+                <h1> Login</h1> <br>
+                <label for="Username">Username</label><br>
+                <input type="text"> <br><br>
+                <label for="Password">Password</label><br>
+                <input type="Password"> <br> <br>
+                 <button id="button">Sign In</button>
+            </div>
+            <img src="img1.jpg" id="man">
+            <img src="img5.jpg" id="logo">
+            <h2 class="head"> WEB-WORLD</h2>
+        </div>
+    </div>
+    <script>
+        const box = document.querySelector('.box');
+        const container = document.querySelector('.container');
+
+        container.addEventListener("mousemove" ,(e)=>{
+            console.log(e.pageX);
+            let horizontal = (window.innerWidth / 2 - e.pageX)/25;
+            let vertical = (window.innerheight / 2 - e.pageY)/25;
+            box.style.transform = `rotateX(${vertical}deg) rotateY(${horizontal}deg)`;
+        });
+        
+
+        container.addEventListener("mouseenter" ,(e)=>{
+             box.style.transition = "0.1s";
+             head.style.transform = "translateZ(120px)";
+        });
+
+        container.addEventListener("mouseleave" ,(e)=>{
+            box.style.transition = "0.1s";
+            box.style.transform = "rotateY(0deg) rotateX(0deg)";
+        });
+
+
+    </script>
+</body>
+</html>
